@@ -70,7 +70,7 @@ public class SimpleMessaging implements IMessaging, EventHandler<ValueEvent> {
     private static SimpleMessaging INSTANCE;
     
     private final ProtocolProcessor m_processor = new ProtocolProcessor();
-    private final AnnotationSupport annotationSupport = new AnnotationSupport();
+    protected final AnnotationSupport annotationSupport = new AnnotationSupport();
     private boolean benchmarkEnabled = false;
     
     CountDownLatch m_stopLatch;
